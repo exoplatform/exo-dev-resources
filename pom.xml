@@ -7,7 +7,7 @@
     <version>9-alpha-1</version>
     <relativePath></relativePath>
   </parent>
-  <groupId>org.exoplatform</groupId>
+  <groupId>org.exoplatform.resources</groupId>
   <artifactId>exo-dev-resources</artifactId>
   <version>1-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -28,6 +28,6 @@
     <jenkins.job.name>exo-dev-resources-master-ci</jenkins.job.name>
   </properties>
   <modules>
-    <module>exo-dev-resources-license</module>
+    <module>exo-artifact-resource-bundle</module>
   </modules>
 </project>

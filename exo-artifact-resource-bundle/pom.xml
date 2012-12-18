@@ -3,13 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>exo-dev-resources</artifactId>
-    <groupId>org.exoplatform</groupId>
+    <groupId>org.exoplatform.resources</groupId>
     <version>1-SNAPSHOT</version>
   </parent>
-  <artifactId>exo-dev-resources-license</artifactId>
+  <artifactId>exo-artifact-resource-bundle</artifactId>
   <packaging>jar</packaging>
-  <name>License Resources</name>
-  <description>eXo License file (License + Notice file containing copyrights).</description>
+  <name>Resource bundle for eXo artifacts</name>
+  <description>License + Notice file containing copyrights</description>
   <build>
     <plugins>
       <plugin>
