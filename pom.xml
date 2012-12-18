@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>maven-parent-pom</artifactId>
+    <groupId>org.exoplatform</groupId>
+    <version>9-alpha-1</version>
+    <relativePath></relativePath>
+  </parent>
+  <groupId>org.exoplatform</groupId>
+  <artifactId>exo-dev-resources</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>Development Resources for eXo projects</name>
+  <scm>
+    <connection>scm:git:git://github.com/exoplatform/exo-dev-resources.git</connection>
+    <developerConnection>scm:git:git@github.com:exoplatform/exo-dev-resources.git</developerConnection>
+    <url>http://fisheye.exoplatform.org/browse/projects/exo-dev-resources</url>
+  </scm>
+  <properties>
+    <!-- **************************************** -->
+    <!-- Jira Settings                            -->
+    <!-- **************************************** -->
+    <jira.project.key>SWF</jira.project.key>
+    <!-- **************************************** -->
+    <!-- Jenkins Settings                         -->
+    <!-- **************************************** -->
+    <jenkins.job.name>exo-dev-resources-master-ci</jenkins.job.name>
+  </properties>
+  <modules>
+    <module>exo-dev-resources-license</module>
+  </modules>
+</project>
