@@ -6,10 +6,10 @@
     <groupId>org.exoplatform.resources</groupId>
     <version>1-SNAPSHOT</version>
   </parent>
-  <artifactId>exo-artifact-resource-bundle</artifactId>
+  <artifactId>exo-lgpl-license-resource-bundle</artifactId>
   <packaging>jar</packaging>
-  <name>Resource bundle for eXo artifacts</name>
-  <description>License + Notice file containing copyrights</description>
+  <name>Resource bundle for LGPL License used in eXo projects</name>
+  <description>Header Texts and others License resources</description>
   <build>
     <plugins>
       <plugin>

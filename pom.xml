@@ -29,5 +29,6 @@
   </properties>
   <modules>
     <module>exo-artifact-resource-bundle</module>
+    <module>exo-lgpl-license-resource-bundle</module>
   </modules>
 </project>
