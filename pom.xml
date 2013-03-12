@@ -28,7 +28,6 @@
     <jenkins.job.name>exo-dev-resources-master-ci</jenkins.job.name>
   </properties>
   <modules>
-    <module>exo-artifact-resource-bundle</module>
     <module>exo-lgpl-license-resource-bundle</module>
   </modules>
 </project>
