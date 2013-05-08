@@ -12,11 +12,14 @@
   <version>2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Development Resources for eXo projects</name>
+  <modules>
+    <module>exo-lgpl-license-resource-bundle</module>
+  </modules>
   <scm>
     <connection>scm:git:git://github.com/exoplatform/exo-dev-resources.git</connection>
     <developerConnection>scm:git:git@github.com:exoplatform/exo-dev-resources.git</developerConnection>
-    <url>http://fisheye.exoplatform.org/browse/projects/exo-dev-resources</url>
     <tag>HEAD</tag>
+    <url>http://fisheye.exoplatform.org/browse/projects/exo-dev-resources</url>
   </scm>
   <properties>
     <!-- **************************************** -->
@@ -28,7 +31,32 @@
     <!-- **************************************** -->
     <jenkins.job.name>exo-dev-resources-master-ci</jenkins.job.name>
   </properties>
-  <modules>
-    <module>exo-lgpl-license-resource-bundle</module>
-  </modules>
+  <profiles>
+    <profile>
+      <id>project-repositories</id>
+      <activation>
+        <property>
+          <name>!skip-project-repositories</name>
+        </property>
+      </activation>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <id>repository.exoplatform.org</id>
+          <url>https://repository.exoplatform.org/public</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+          <id>repository.exoplatform.org</id>
+          <url>https://repository.exoplatform.org/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
 </project>
