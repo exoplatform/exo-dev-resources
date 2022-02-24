@@ -1,0 +1,31 @@
+#if($preDepListText)
+$preDepListText
+#else
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+#if ($projectName)$projectName#else${project.name}#end
+
+#end
+
+#foreach ( $organizationName in $projectsSortedByOrganization.keySet() )
+This product includes/uses software developed by '$organizationName.name'#if($organizationName.url) ($organizationName.url)#end
+
+#foreach ( $dependencyProject in $projectsSortedByOrganization.get( $organizationName ) )
+  - $dependencyProject.name #if ($dependencyProject.url)($dependencyProject.url)#end
+
+      Artifact: $dependencyProject.artifact
+#foreach ( $license in $dependencyProject.licenses)
+      License: $license.name #if ($license.url) ($license.url)#end
+#end
+
+#end
+
+#end
+
+
+#if($postDepListText)
+$postDepListText
+#end

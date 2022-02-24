@@ -1,0 +1,15 @@
+#if ($projectName)$projectName#else${project.name}#end
+
+
+Copyright ${projectTimespan}#if($project.organization.name) $project.organization.name#else eXo Platform SAS#end
+
+
+Licensed under (Find more details in LICENSE.txt) :
+#foreach ( $license in $project.licenses)
+
+    * $license.name #if ($license.url) ($license.url)#end
+
+#end
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
