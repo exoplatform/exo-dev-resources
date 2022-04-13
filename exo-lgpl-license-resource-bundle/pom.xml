@@ -4,7 +4,7 @@
   <parent>
     <artifactId>exo-dev-resources</artifactId>
     <groupId>org.exoplatform.resources</groupId>
-    <version>3-SNAPSHOT</version>
+    <version>3</version>
   </parent>
   <artifactId>exo-lgpl-license-resource-bundle</artifactId>
   <packaging>jar</packaging>
